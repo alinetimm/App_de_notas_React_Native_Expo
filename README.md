@@ -1,4 +1,4 @@
-# de Anotações em React Native
+# App de Anotações em React Native
 
 Este é um aplicativo simples, criado com React Native e Expo, para demonstrar os conceitos fundamentais da aula de "Componentes, Estado e Validação".
 
