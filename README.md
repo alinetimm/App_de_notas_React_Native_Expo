@@ -1,50 +1,64 @@
-# Welcome to your Expo app 👋
+# de Anotações em React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo simples, criado com React Native e Expo, para demonstrar os conceitos fundamentais da aula de "Componentes, Estado e Validação".
 
-## Get started
+# Funcionalidades
 
-1. Install dependencies
+O aplicativo possui uma interface com duas abas principais:
 
-   ```bash
-   npm install
-   ```
+Criar Nota: Uma tela onde o usuário pode digitar uma nova anotação em um campo de texto de múltiplas linhas e salvá-la.
 
-2. Start the app
+Ver Notas: Uma tela que exibe uma lista de todas as anotações que foram salvas.
 
-   ```bash
-   npx expo start
-   ```
+# Tecnologias e Conceitos Aplicados
 
-In the output, you'll find options to open the app in a
+Este projeto foi construído para exemplificar o uso de:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Componentes Funcionais: A estrutura do app é toda baseada em componentes funcionais.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Hook useState: Utilizado para gerenciar dois estados principais:
 
-## Get a fresh project
+O controle da aba ativa (qual tela está sendo exibida).
 
-When you're ready, run:
+O armazenamento do array de notas salvas.
 
-```bash
-npm run reset-project
-```
+Componente TextInput: Para a captura de texto do usuário, configurado com a propriedade multiline para permitir anotações mais longas.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Componente TouchableOpacity: Usado para criar botões interativos com feedback visual de opacidade ao serem pressionados.
 
-## Learn more
+Props: Para a comunicação entre componentes. Por exemplo, a função de salvar nota é passada do componente App para o CreateNoteTab.
 
-To learn more about developing your project with Expo, look at the following resources:
+Renderização Condicional: Para exibir a tela correta com base na aba que está ativa.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Função .map(): Para renderizar dinamicamente a lista de notas salvas.
 
-## Join the community
+StyleSheet: Para a estilização básica da interface.
 
-Join our community of developers creating universal apps.
+# Como Executar o Projeto
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Pré-requisitos
+
+Node.js e npm/yarn instalados.
+
+Expo Go instalado em seu dispositivo móvel (Android ou iOS) ou um emulador configurado.
+
+Passos
+
+Clone o repositório ou salve o arquivo App.js em um novo projeto Expo.
+
+npx create-expo-app meu-app-de-notas
+cd meu-app-de-notas
+# Substitua o conteúdo do App.js pelo código fornecido
+
+
+Instale as dependências (se estiver criando um novo projeto, o Expo já cuida disso).
+
+npm install
+
+
+Inicie o servidor de desenvolvimento.
+
+npx expo start
+
+
+Abra o app: Escaneie o QR code exibido no terminal com o aplicativo Expo Go no seu celular.
